@@ -33,4 +33,9 @@ konlpy 라이브러리를 사용한 형태소 분석기. 웹서버도 띄울 수
 - 단어 추가 시 규칙에 맞춰서 넣어줘야함. 단어{tab}타입
 
 ## analyzers/{ETC}.py
-- 그외 형태소 KoNLPy 라이브러리 래핑용
+- 그 외 형태소 KoNLPy 라이브러리 래핑용
+
+## 테스트
+- curl "http://127.0.0.1:5000/analyze?text=Hello+%ED%8C%8C%EC%9D%B4%EC%8D%AC+%ED%95%9C%EA%B5%AD%EC%96%B4+%ED%98%95%ED%83%9C%EC%86%8C+%EB%B6%84%EC%84%9D%EA%B8%B0%EB%A5%BC+%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%A9%EB%8B%88%EB%8B%A4."
+  - 입력: Hello 파이썬 한국어 형태소 분석기를 테스트합니다.
+  - 출력: {"nouns": ["파이썬", "한국어", "형태소", "분석기", "테스트"]}
