@@ -1,0 +1,8 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Optional: venv, log 등
+venv/
+*.log
+*.pid
