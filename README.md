@@ -3,6 +3,8 @@ konlpy 라이브러리를 사용한 형태소 분석기. 웹서버도 띄울 수
 
 ## 환경
 - python3 기반
+
+## 필요 라이브러리 설치
 - pip install konlpy jpype1
 - pip install flask
 
@@ -15,13 +17,16 @@ konlpy 라이브러리를 사용한 형태소 분석기. 웹서버도 띄울 수
 - 리눅스용 웹서버 실행.
 - nohup
 - MINGW64 에서도 동작함.
+- start.sh 5001 등으로 포트 변경 적용 가능 (기본포트 5000)
 
 ## stop.sh
 - 리눅스용 웹서버 정지.
+- stop.sh 5001 등으로 변경된 포트 적용 가능 (기본포트 5000)
 
 ## start.bat
 - 윈도우용 테스트 웹서버 실행
 - ctrl+c 로 종료.
+- start.bat 5001 등으로 포트 변경 적용 가능 (기본포트 5000)
 
 ## analyzers/komoran.py
 - 실제 형태소 분석용 파일
