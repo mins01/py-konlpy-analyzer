@@ -26,8 +26,14 @@ def analyze_text(text):
     # 형태소 단위 추출
     # morphs = analyze.morphs(text)
 
+    # 전체 품사 태깅
+    pos_result = analyze.pos(text)
+
+    # 외국어(SL)와 명사(NNG, NNP)만 추출
+    nouns = [word for word, tag in pos_result if tag in ['NNG', 'NNP', 'SL']]
+
     # 명사만 추출
-    nouns = analyze.nouns(text)
+    # nouns = analyze.nouns(text)
 
     # 품사 태깅
     # pos = analyze.pos(text)
